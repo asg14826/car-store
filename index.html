@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column justify-content-around">
+        <table class="carTable w-50 table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>CAR name</th>
+                    <th>YEAR</th>
+                    <th>KM</th>
+                    <th>PRICE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="tr1">
+                    <td>1</td>
+                    <td id="car1">Honda</td>
+                    <td>2003</td>
+                    <td>120,000</td>
+                    <td id="price1">7000</td>
+                    <td><button  id="btn1" class="select btn-primary">select</button></td>
+                </tr>
+                <tr id="tr2">
+                    <td >2</td>
+                    <td id="car2">Mercedes</td>
+                    <td>2013</td>
+                    <td>120,000</td>
+                    <td id="price2">90000</td>
+                    <td><button id="btn2" class="select btn-primary">select</button></td>
+                </tr>
+                <tr id="tr3">
+                    <td >3</td>
+                    <td id="car3">BMW</td>
+                    <td>2009</td>
+                    <td>100,000</td>
+                    <td id="price3">70000</td>
+                    <td><button id="btn3" class="select btn-primary">select</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="d-flex flex-column justify-content-around ">
+            <button class="btn-primary w-50" id="order">order</button>
+        </div>
+        <div class="d-flex flex-column justify-content-around ">
+            <table class="newTable w-50 table table-striped d-none">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>CAR NAME</th>
+                        <th>PRICE</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">                   
+                </tbody>
+            </table>
+        </div>
+        <div class="div d-flex flex-column justify-content-around ">
+            <p>TOTAL:<span id="total"></span></p>
+        </div>
+    </div>
+</body>
+
+</html>
